@@ -31,13 +31,20 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-    /* position: static; */
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    background-color: var(--blanco);
 }
 
-/* main{
+main{
     position: relative;
 
-} */
+}
+
+footer{
+    position: relative;
+}
 
 .titulo-principal {
     width: 30%;
@@ -70,7 +77,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 
 }
 
@@ -79,9 +86,10 @@ body {
     text-decoration: none;
     gap: 20px;
     padding: 10px;
+    font-size: 20px;
 }
 
-.ul-nav1 a i{
+.ul-nav1 a i {
     margin-right: 5px
 }
 
@@ -91,15 +99,24 @@ body {
     background-color: var(--azul-claro);
     color: var(--blanco);
     margin: 10px;
+    font-size: 20px;
 }
 
 /* estilos para la seccion informativa articulo 1 y parte de 2*/
-.contenedor-1, .contenedor-2, .contenedor-3{
-    padding: 10%;
+.contenedor-1,
+.contenedor-2 {
+    padding-inline: 10%;
     width: 100%;
     display: flex;
     align-items: center;
     gap: 50px;
+}
+
+.contenedor-3 {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 h2 {
@@ -113,20 +130,121 @@ h2 {
     flex-direction: column;
 }
 
-.imagen1 img, .imagen2 img, .imagen3 img{
-    width: 100%;
+.imagen1 img,
+.imagen2 img {
+    width: 700px;
     border-radius: 50px;
 }
 
-.formulario-solicita-vehiculo{
+.imagen3 img {
+    width: 750px;
+    border-radius: 50px;
+}
+
+.formulario-solicita-vehiculo {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .formulario-solicita-vehiculo input[type="text"],
-.formulario-solicita-vehiculo input[list="centro-formacion"]{
+.formulario-solicita-vehiculo input[list="centro-formacion"] {
     width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid var(--azul-claro);
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.formulario-solicita-vehiculo button {
+    width: 35%;
+    background-color: var(--azul-claro);
+    color: var(--blanco);
+    border-radius: 50px;
+    padding: 10px 30px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+/* estilos para la seccion informativa articulo 2 */
+.info-2 p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.info-3 p {
+    text-align: center;
+    font-size: 25px;
+}
+
+/* estilos para la seccion informativa articulo 3 */
+.tabla {
+    width: 100%;
+    height: 2px;
+}
+
+#color-tabla {
+    border-top: 5px solid var(--azul-claro);
+}
+
+.info-tabla {
+    text-align: center;
+}
+
+/* stilos seccion de requisitos */
+.contenedor-4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.imagen4 {
+    width: 45%;
+    border-radius: 50px;
+}
+
+/* estilos contenedor 5 */
+.contenedor-5 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 10%;
+}
+
+.contenedor-5 div i {
+    color: var(--azul-claro);
+}
+
+.contenedor-mini {
+    width: 30%;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* stilos para el contenedor de formulario de registro */
+h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.formulario-registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario-registro input[type="text"],
+.formulario-registro input[type="email"],
+.formulario-registro input[type="tel"],
+.formulario-registro input[list="centro-formacion"],
+.formulario-registro select,
+.formulario-registro textarea {
+    width: 40%;
     padding: 10px;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -134,29 +252,69 @@ h2 {
     border-radius: 5px;
 }
 
-.formulario-solicita-vehiculo button{
-    width: 35%;
+.formulario-registro button {
+    width: 20%;
     background-color: var(--azul-claro);
     color: var(--blanco);
-    border-radius:50px;
+    border-radius: 50px;
     padding: 10px 30px;
-    margin-top:5px ;
+    margin-top: 5px;
 }
 
-/* estilos para la seccion informativa articulo 2 */
-.info-2 p, .info-3 p{
-    text-align: center;
+select {
+    background-color: var(--blanco);
 }
 
-/* estilos para la seccion informativa articulo 3 */
-.tabla{
+/* Estilos a la seccion acerca de nosotros */
+.contenedor-7 {
     width: 100%;
-    height: 2px;
+    display: flex;
+    padding-inline: 5%;
+    gap: 50px;
+    justify-content: space-between;
+    margin-bottom: 3%;
 }
-#color-tabla{
-    border-top: 5px solid var(--azul-claro);
+
+.contenedor-7a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
- 
-.info-tabla{
-    text-align: center;
+
+h5 {
+    padding: 20px;
+    font-size: 30px;
+}
+
+/* Whatsapp */
+#red-whatsapp a img{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 80px;
+    z-index: 1;
+    right:10px;
+    border-radius: 50px;
+}
+
+
+/* Footer */
+.final-parte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--azul-claro);
+    color: var(--blanco);
+    font-size: 20px;
+    padding: 15px;
+}
+
+.derechos p span {
+    color: var(--azul-oscuro);
+}
+
+.redes a {
+    color: var(--blanco);
+    font-size: 40px;
+    padding-inline: 15px;
 }

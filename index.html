@@ -107,7 +107,7 @@
                                 <td id="color-tabla" colspan="5"></td>
                             </tr>
                         </thead>
-                        <tbody >
+                        <tbody>
                             <tr class="info-tabla">
                                 <td>Riwi medellin</td>
                                 <td>15</td>
@@ -139,30 +139,28 @@
 
         <!-- Seccion de Requisitos -->
         <section id="requisitos">
-            <article>
-                <div>
-                    <h2><i> ¿Que necesito para ser un conductor riwi? </i></h2>
-                    <img src="./public/img/conductores.webp" alt="foto de 2 conductores">
-                </div>
+            <article class="contenedor-4">
+                <h2><i> ¿Que necesito para ser un conductor riwi? </i></h2>
+                <img class="imagen4" src="./public/img/conductores.webp" alt="foto de 2 conductores">
             </article>
 
             <!-- Articulo de requisitos para ser conductor riwi -->
-            <article>
-                <div>
+            <article class="contenedor-5">
+                <div class="contenedor-mini">
                     <i class="bi bi-star-fill"></i>
                     <h4>Requisitos</h4>
                     <p>Ser mayor de 18 años</p>
                     <p>Verificación de antecedentes</p>
                     <p>Ser coder de riwi</p>
                 </div>
-                <div>
+                <div class="contenedor-mini">
                     <i class="bi bi-file-earmark-text-fill"></i>
                     <h4>Documentos</h4>
                     <p>Licencia de conducción vigente</p>
                     <p>SOAT vigente</p>
                     <p>Tarjeta de propiedad del vehiculo actual</p>
                 </div>
-                <div>
+                <div class="contenedor-mini">
                     <i class="bi bi-calendar-fill"></i>
                     <h4>Empezar es muy fácil</h4>
                     <p>Regístrate</p>
@@ -172,19 +170,28 @@
             </article>
 
             <!-- Articulo con formulario de registro obligatorio para el aspirante a conductor riwi -->
-            <article>
-                <form action="">
+            <article class="contenedor-6">
+                <form class="formulario-registro" action="">
                     <h3>Registrate cuando quieras</h3>
                     <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
                     <input type="email" name="correo" id="correo" placeholder="ingresa tu correo" required>
                     <input type="tel" name="telefono" id="telefono" placeholder="ingresa tu telefono" required>
+                    <input list="centro-formacion" name="centroformacion"
+                        placeholder="selecciona tu centro de formacion" required>
+
+                    <datalist id="centro-formacion">
+                        <option value="Riwi medellin">Riwi medellin</option>
+                        <option value="Riwi Bucaramanga">Riwi Bucaramanga</option>
+                        <option value="Riwi Barranquilla">Riwi Barranquilla</option>
+                        <option value="Riwi cali">Riwi cali</option>
+                    </datalist>
                     <select name="perfil" id="perfil-coder" required>
                         <option value="selecciona-tu-perfil">Selecciona tu perfil</option>
                         <option value="conductor-motociclista">Conductor Motociclista</option>
                         <option value="conductor-automovilístico">Conductor Automvilístico</option>
 
                     </select>
-                    <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="comentarios"
+                    <textarea name="comentarios" id="comentarios" cols="40" rows="10" placeholder="comentarios"
                         required>
                     </textarea>
                     <button type="submit">Registrate</button>
@@ -195,33 +202,34 @@
         <!-- Seccion de acerca de nosotros y el mapa con la ubicacion de riwi -->
         <section id="acerca-de-nosotros">
             <h2><i>Acerca de nosotros</i></h2>
-            <article>
-                <div>
+            <article class="contenedor-7">
+                <div class="contenedor-7a">
                     <h5>¿Quienes somos?</h5>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7CFyOSd-m3o?si=JFN1Gg4cQ8Ke5TjQ"
+                    <iframe width="760" height="450" src="https://www.youtube.com/embed/7CFyOSd-m3o?si=JFN1Gg4cQ8Ke5TjQ"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <div>
+                <div class="contenedor-7a">
                     <h5>¿Donde estamos ubicados?</h5>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.337858174151!2d-75.58618982407846!3d6.219100993768888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44293f0e114eef%3A0x99610cdd44c7c081!2sRiwi%20-%20Be%20a%20Coder!5e0!3m2!1ses-419!2sco!4v1712668741088!5m2!1ses-419!2sco"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </article>
         </section>
-    </main>
 
-    <!-- Footer de la pagina donde se encuentras las redes sociales y los derechos reservados -->
-    <footer>
-        <div id="Red-whatsapp">
+        <div id="red-whatsapp">
             <a
                 href="https:wa.me/573017325327/?text=Buen día TransRiwi! Me gustaría conocer más información acerca de la plataforma de "><img
                     src="./public/icons/whatsapp.webp" alt="Icono de whatsapp">
             </a>
         </div>
+    </main>
+
+    <!-- Footer de la pagina donde se encuentras las redes sociales y los derechos reservados -->
+    <footer>
 
         <section class="final-parte">
             <article class="redess">
