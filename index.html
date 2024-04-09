@@ -1,0 +1,244 @@
+<!-- 
+    Nombre Completo: Wendy Karina Pineda Parra
+    Clan: Clan Dell
+    Fecha: 9/04/2024
+ -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Metadatos donde hay al detalle infromacion de la página -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="esta es una landing sobre los transportes utilizados para llegar a riwi">
+    <meta name="keywords"
+        content="Registro Trans-Riwi, Trasnporte hacia riwi, viaja con amigos desde y hacia riwi, cómo puedo ser conductor riwi, contacto transriwi, ubicación e introducción">
+    <meta name="sitedomain" content="https://example.com" />
+    <meta name="organization" content="RIWI_DELL" />
+    <meta name="author" content="Karina Pineda" />
+    <meta name="designer" content="Karina Pineda" />
+    <meta name="copyrigth" content="© 2024 TransRiwi Wendy Karina Pineda Parra Todos los derechos reservados">
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="revisit-after" content="15days" />
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="shortcut icon" href="./public/icons/favicon.ico" type="image/x-icon">
+    <title>Trans-Riwi</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="./public/icons/menor.webp" alt="Simbolo menor que">
+        <h1> <i><span class="letra-titulo">T</span>rans<span class="letra-titulo">R</span>iwi</i></h1>
+        <img src="./public/icons/mayor.webp" alt="Simbolo mayor que">
+        <nav>
+            <ul>
+                <a href="#requisitos"><i class="bi bi-card-checklist"></i><span>Requisitos</span></a>
+                <a href="#acerca-de-nosotros"><i class="bi bi-geo-fill"></i><span>Arcerca De Nosotros</span></a>
+                <a href="mailto:formacion@riwi.io" target="_blank"><i class="bi bi-envelope-fill"></i><span>Contactanos</span></a>
+                <a href="tel: +3017325327" target="_blank"><i class="bi bi-telephone-fill"></i><span>Llamanos</span></a>
+            </ul>
+            <ul>
+                <button>Iniciar Sesion</button>
+                <button>Registrarse</button>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Seccion de ubicacion y centro de formacion  -->
+        <section>
+
+            <!-- Articulo donde se puede solicitar un vehiculo -->
+            <article>
+                <div>
+                    <h2><i>Transportate desde cualquier lugar hacia tu centro de entrenamiento</i></h2>
+                    <form action="">
+                        <input type="text" name="ingreso-ubicacion" id="ingreso-ubicacion"
+                            placeholder="ingresa tu ubicacion" required>
+                        <div>
+                            <input list="centro-formacion" name="centroformacion"
+                                placeholder="selecciona tu centro de formacion" required>
+                        </div>
+                        <datalist id="centro-formacion">
+                            <option value="Riwi medellin">Riwi medellin</option>
+                            <option value="Riwi Bucaramanga">Riwi Bucaramanga</option>
+                            <option value="Riwi Barranquilla">Riwi Barranquilla</option>
+                            <option value="Riwi cali">Riwi cali</option>
+                        </datalist>
+
+                        <button type="submit"><i class="bi bi-send-fill"></i><span>Solicitar vehículo</span></button>
+                    </form>
+                </div>
+                <div>
+                    <img src="./public/img/cuatro_pasajeros.webp" alt="imagen de 4 pasajeros">
+                </div>
+            </article>
+
+            <!-- Articulo donde se invita a unirse a la plataforma -->
+            <article>
+                <div>
+                    <img src="./public/img/conductora.webp" alt="imagen de 1 conductora">
+                </div>
+                <div>
+                    <h2><i>Registrate cuando quieras y genera las ganancias que necesites</i></h2>
+                    <p>¡Únete hoy y abre las puertas a tus oportunidades financieras!</p>
+                </div>
+            </article>
+
+            <!-- Articulo donde se encuentra el listado de vehiculos disponibles en cada sede -->
+            <article>
+                <div>
+                    <h2><i>Viaja con amigos</i></h2>
+                    <p>¡Viaja con amigos y crea recuerdos inolvidables!</p>
+                    <p>observa la lista de vehiculos disponibles en cada una de nuestra sedes </p>
+                </div>
+                <table>
+                    <thead>
+                        <tr align="center">
+                            <th><i class="bi bi-buildings-fill"></i>Sede</th>
+                            <th><i class="bi bi-car-front-fill"></i>Vehicuclos</th>
+                            <th><i class="bi bi-bicycle"></i>Motos</th>
+                        </tr>
+                        <tr>
+                            <td colspan="5" bgcolor="#FFB6C1"> </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr align="center">
+                            <td>Riwi medellin</td>
+                            <td>15</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td>Riwi Bucaramanga</td>
+                            <td>10</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>Riwi Barranquilla</td>
+                            <td>20</td>
+                            <td>180</td>
+                        </tr>
+                        <tr>
+                            <td>Riwi cali</td>
+                            <td>8</td>
+                            <td>200</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <img src="./public/img/motociclistas.webp" alt="Imagen de 2 personas en una motocicleta">
+                </div>
+            </article>
+        </section>
+
+        <!-- Seccion de Requisitos -->
+        <section id="requisitos">
+            <article>
+                <div>
+                    <h2><i> ¿Que necesito para ser un conductor riwi? </i></h2>
+                    <img src="./public/img/conductores.webp" alt="foto de 2 conductores">
+                </div>
+            </article>
+
+            <!-- Articulo de requisitos para ser conductor riwi -->
+            <article>
+                <div>
+                    <i class="bi bi-star-fill"></i>
+                    <h4>Requisitos</h4>
+                    <p>Ser mayor de 18 años</p>
+                    <p>Verificación de antecedentes</p>
+                    <p>Ser coder de riwi</p>
+                </div>
+                <div>
+                    <i class="bi bi-file-earmark-text-fill"></i>
+                    <h4>Documentos</h4>
+                    <p>Licencia de conducción vigente</p>
+                    <p>SOAT vigente</p>
+                    <p>Tarjeta de propiedad del vehiculo actual</p>
+                </div>
+                <div>
+                    <i class="bi bi-calendar-fill"></i>
+                    <h4>Empezar es muy fácil</h4>
+                    <p>Regístrate</p>
+                    <p>Sube tus documentos</p>
+                    <p>Sal a manejar</p>
+                </div>
+            </article>
+
+            <!-- Articulo con formulario de registro obligatorio para el aspirante a conductor riwi -->
+            <article>
+                <form action="">
+                    <h3>Registrate cuando quieras</h3>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
+                    <input type="email" name="correo" id="correo" placeholder="ingresa tu correo" required>
+                    <input type="tel" name="telefono" id="telefono" placeholder="ingresa tu telefono" required>
+                    <div>
+                        <input list="perfil-coder" name="centroformacion" placeholder="selecciona tu perfil" required>
+                    </div>
+                    <datalist id="perfil-coder">
+                        <option value="Conductor Motociclista">Conductor Motociclista</option>
+                        <option value="Conductor Automovilístico">Conductor Automvilístico</option>
+                    </datalist>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="comentarios"
+                        required></textarea>
+                    <button type="submit">Registrate</button>
+                </form>
+            </article>
+        </section>
+
+        <!-- Seccion de acerca de nosotros y el mapa con la ubicacion de riwi -->
+        <section id="acerca-de-nosotros">
+            <h2><i>Acerca de nosotros</i></h2>
+            <article>
+                <div>
+                    <h5>¿Quienes somos?</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7CFyOSd-m3o?si=JFN1Gg4cQ8Ke5TjQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h5>¿Donde estamos ubicados?</h5>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.337858174151!2d-75.58618982407846!3d6.219100993768888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44293f0e114eef%3A0x99610cdd44c7c081!2sRiwi%20-%20Be%20a%20Coder!5e0!3m2!1ses-419!2sco!4v1712668741088!5m2!1ses-419!2sco"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <div id="Red-whatsapp">
+            <a
+                href="https:wa.me/573017325327/?text=Buen día TransRiwi! Me gustaría conocer más información acerca de la plataforma de "><img
+                    src="./public/icons/whatsapp.webp" alt="Icono de whatsapp">
+            </a>
+
+
+        </div>
+        <section class="final-parte">
+            <article class="redess">
+                <ul class="redes">
+                    <a href="https://www.facebook.com/p/Riwi-100092420949391/?locale=es_LA" target="_blank"><i
+                            class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/riwi.io/?hl=es" target="_blank"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="https://co.linkedin.com/company/riwi-io" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FInfoRiwi4424" target="_blank"><i
+                            class="bi bi-twitter-x"></i></a>
+                </ul>
+            </article>
+            <article class="derechos">
+                <p>© 2024 <span> Riwi.io</span> Todos los derechos reservados
+                </p>
+            </article>
+        </section>
+    </footer>
+
+</body>
+
+</html>
